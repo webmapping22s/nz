@@ -18,3 +18,8 @@ article p {
     text-align: justify;
     line-height: 1.2em;
 }
+
+a {
+    color: black;
+}
+
