@@ -59,7 +59,7 @@
     ```
 
     * das Link-Ziel wird durch das href-Atrtribut (wie Hyperlink reference) bestimmt
-    * der Linktext steht zwischen &lt;a href=""> und &lt;/a>
+    * der Linktext steht zwischen `<a href="">` und `</a>`
 
 * ein Bild als Abbildung mit Bildunterschrift einbauen
 
@@ -68,7 +68,7 @@
         * wir öffnen das Vorschaubild gleich in einem neuem Tab und speichern es
             * in einem neuen Unterverzeichnis `images/`
             * mit dem Namen `attraction.jpg` (oder `attraction.webp` je nach Browser)
-        * und [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5766bf011430e9790045582047a7bc3b51cc339d)
+        * [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5766bf011430e9790045582047a7bc3b51cc339d)
 
     * die Abbildung als &lt;figure>-Element mit einem Bild als &lt;img>-Element [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/b62016fa6a7cb77299eeeca859a89f41235a2122)
 
@@ -79,8 +79,8 @@
         ```
 
         * das &lt;img>-Element benötigt (mindestens) zwei Attribute
-        * das **src-Attribut** (wie source) mit dem Ablageort des Bildes
-        * das **alt-Attribut** (wie alternativ) als Beschreibung des Bildes für Screenreader
+            * das **src-Attribut** (wie source) mit dem Ablageort des Bildes
+            * das **alt-Attribut** (wie alternative) als Beschreibung des Bildes für Screenreader
 
     * die Bildunterschrift als &lt;figcaption>-Element mit einem Link zur Bildquelle [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/1fb367f887c128278893d89ad665d4669bd4a3fb)
 
@@ -105,7 +105,7 @@
 
 ### c) Seitenstruktur verfeinern
 
-* wir verpacken alles im &lt;body-Element in ein &lt;article>-Element innerhalb eines &lt;main>-Elements [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/c8a1a889dcf7e3027e61a7bb48782a4cf1e88ca4)
+* wir verpacken alles im &lt;body>-Element in ein &lt;article>-Element innerhalb eines &lt;main>-Elements [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/c8a1a889dcf7e3027e61a7bb48782a4cf1e88ca4)
 
     ```html
     <body>
@@ -137,11 +137,11 @@
     * Größe ändern mit [https://redketchup.io/](https://redketchup.io/)
 
         * *Image Resizer*
-        * *Browse / Crop Dimensions
+        * *Browse / Crop Dimensions*
         * 1280 x 365 Pixel einstellen
         * *Save Image*
 
-        * und [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5766bf011430e9790045582047a7bc3b51cc339d)
+        * [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5766bf011430e9790045582047a7bc3b51cc339d)
 
 * wir bauen das Banner in einem neuen &lt;header>-Element als &lt;img>-Element ein [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5d0ebd2d7069b0ce3b2e709881d44902b1236ac4)
 
@@ -170,26 +170,27 @@
     * Größe ändern mit [https://redketchup.io/](https://redketchup.io/)
 
         * *Image Resizer*
-        * *Aspect Ratio / Square
+        * *Aspect Ratio / Square*
         * Ausschnitt wählen
         * *Resize Dimensions*
         * 100 x 100 Pixel einstellen
         * *Save Image*
 
-        * und [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/19676e6fab8a4de13114ab022ddd5df38e82f1df)
+        * [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/19676e6fab8a4de13114ab022ddd5df38e82f1df)
 
 * Userbild mit Bildquelle und Bild als Link direkt unter dem Bannerbild einbauen [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/6cd882b76dc945b5a38540b40da4d2c2cbbd20e5)
 
     ```html
     <a href="#"><img src="images/user.jpg" alt="Another one rides the bus"></a>
+    ```
 
-    * beim href-Attribut des Links verwenden wir die Raute (**#**) als Platzhalter, später werden wir das eigene User-repo verlinken
+    * beim href-Attribut des Links verwenden wir die Raute (**#**) als Platzhalter, später werden wir das eigene github User-Repo verlinken
     * als *Linktext* verwenden wir das Bild statt einem Text
 
 ### e) Footerbereich mit Etappennavigation erstellen
 
 * wir ergänzen ein &lt;footer>-Element
-    * nach &lt;/article> und vor dem &lt;/main>
+    * nach &lt;/article> und vor &lt;/main>
     * im &lt;footer>-Element ein &lt;nav>-Element mit zwei Links (# wieder als Platzhalter)
 
     ```html
@@ -220,6 +221,12 @@
 
 * mit Erstellung eurer github-Repos und der Zuteilung der github-User zu den Etappen können die #-Links noch angepasst werden
 
+* Userlink zum github-Repo [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/9734593ca1135024e0c7b9c35166233bf005aa0d)
+
+    ```html
+    <a href="https://github.com/webmapping"><img src="images/user.jpg" alt="Another one rides the bus"></a>
+    ```
+
 * Vor- und Zurücklinks für die Tongariro-Seite [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/cc99b19ce1587e58bdd9d6332eaa338843dc05ef)
 
     ```html
@@ -227,19 +234,13 @@
     <a href="https://andrea-1408.github.io/nz/index.html">nächste Etappe 🡪</a>
     ```
 
-* Userlink zum github-Repo [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/9734593ca1135024e0c7b9c35166233bf005aa0d)
-
-    ```html
-    <a href="https://github.com/webmapping"><img src="images/user.jpg" alt="Another one rides the bus"></a>
-    ```
-
 ## 2. CSS Layout
 
 ### a) erste Versuche mit dem style-Attribut und &lt;style>-Element
 
-wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
+Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
-* Möglichkeit 1: das **style-Attribut**
+* **Möglichkeit 1: das style-Attribut**
 
     * wir versuchen es und spielen mit der &lt;h1>-Überschrift
 
@@ -265,17 +266,17 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         ```
 
     * was bedeuten die Deklarationen?
-        * color:green: Farbe grün
-        * font-size:40px: Schriftgröße 40 Pixel
-        * border:3px dashed black: schwarz-strichlierter Ramen mit 3 Pixel Rahemnbreite
-        * background-color:blue: Hintergrundfarbe blau
-        * width:50%: Breite 50%
+        * `color:green`: Farbe grün
+        * `font-size:40px`: Schriftgröße 40 Pixel
+        * `border: 3px dashed black`: schwarz-strichlierter Ramen mit 3 Pixel Rahmenbreite
+        * `background-color:blue`: Hintergrundfarbe blau
+        * `width:50%`: Breite 50%
 
     * Tooltips im VS Code geben wieder Hilfestellung und führen zur MDN-Hilfe
 
-* Möglichkeit 2: das &lt;style>-Element
+* **Möglichkeit 2: das &lt;style>-Element**
 
-    * wir verschieben jetzt die style-Attribute in ein &lt;style>-Element
+    * wir verschieben jetzt den Inhalt des style-Attributs in ein &lt;style>-Element
 
     * das &lt;style>-Element gehört in den &lt;head>-Bereich
 
@@ -287,10 +288,10 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         }
         ```
 
-    * **h1** ist der "CSS-Selektor" (**selector**)
-    * die geschwungenen Klammern umschließen die "CSS-Deklarationen"
+        * **h1** ist der "CSS-Selektor" (**selector**)
+        * die geschwungenen Klammern umschließen die "CSS-Deklarationen" (**declarations**)
 
-    * und dorthin (zwischen { } )verschieben wir den Inhalt unseres style-Attributs
+    * und dorthin verschieben wir den Inhalt unseres style-Attributs und löschen das style-Attribut [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/af344f726c62e598a011184e0710ea837d276a47)
 
         ```html
         <style>
@@ -304,15 +305,13 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         </style>
         ```
 
-    * das style-Attribut löschen wir [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/af344f726c62e598a011184e0710ea837d276a47)
-
     * optisch ändert sich nichts
 
     * wir könnten jetzt statt h1, auch h2 stylen
 
         ```css
         h2 {
-            /* Stile */
+            /* Stile wie gehabt */
         }
         ```
 
@@ -320,7 +319,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
         ```css
         h1, h2 {
-            /* Stile */
+            /* Stile wie gehabt */
         }
         ```
 
@@ -328,7 +327,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
         ```css
         h1, h2, p {
-            /* Stile */
+            /* Stile wie gehabt */
         }
         ```
 
@@ -350,7 +349,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
 * mit **STRG+Klick** erzeugt VS Code `main.css` für uns [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/e1acd19836ccff5237afc39647afcc6ed9858f17)
 
-* wir verschieben den Inhalt von &lt;style> dort hin, löschen das &lt;style>-element und verwenden Beautify in `main.css`
+* wir verschieben den Inhalt von &lt;style> dort hin, löschen das &lt;style>-Element und verwenden Beautify in `main.css` [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/b1fad9e8ed60abe68410f46e49f56ae8e16fdc16)
 
     ```css
     h1 {
@@ -361,8 +360,6 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         width: 50%
     }
     ```
-
-    [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/b1fad9e8ed60abe68410f46e49f56ae8e16fdc16)
 
 * in `main.css` werden wir ab jetzt das Seitenlayout der Etappe definieren
 
@@ -412,7 +409,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-    * `em` bestimmt die Abstände in Abhängigkeit der schriftgröße - siehe [Wikipedia:em (Schriftsatz)](https://de.wikipedia.org/wiki/Em_(Schriftsatz))
+    * `em` bestimmt die Abstände in Abhängigkeit der Schriftgröße - siehe [Wikipedia:em (Schriftsatz)](https://de.wikipedia.org/wiki/Em_(Schriftsatz))
 
 * Absätze im Artikel als Blocksatz [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/bf1d5f9a1427cc72d2c6a52c6e1056b5f7a4150e)
 
@@ -426,7 +423,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
     * **Wichtig**: das heißt dann: *alle p-Element innerhalb des article-Elements*
 
-* Zeilenhöhe gleich noch etwas vergrößeren [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/cee9b45549b602642651fa748b6aa48611195894)
+* Zeilenhöhe gleich noch etwas vergrößern [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/cee9b45549b602642651fa748b6aa48611195894)
 
     ```css
     article p {
@@ -435,7 +432,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-* die Links im Artikel färben wir Schwarz [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/9d95781f8b0490bd6a64cbfc78276fce7ff8888a)
+* die Links im Artikel färben wir schwarz [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/9d95781f8b0490bd6a64cbfc78276fce7ff8888a)
 
     ```css
     a {
@@ -449,7 +446,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         * **a:visited** - besuchte Links
         * **a:hover** - beim *Überfahren* des Links mit der Maus
 
-    * **:hover** kann man auch für andere element verwenden
+    * **:hover** kann man auch für andere Element verwenden
 
 * das Userbild im Header zentrieren wir über einen Trick: wir setzen den ganzen Headerbereich auf zentriert [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5eeccf2e3c7f23ba19ddc18a958d1b207793341d)
 
@@ -469,7 +466,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         <a href="https://github.com/webmapping"><img class="user" src="images/user.jpg" alt="Another one rides the bus"></a>
         ```
 
-    * und einem **Klassenselektor** in `main.css`
+    * und einen **Klassenselektor** in `main.css`
 
         * Klassenselektoren beginnen mit einem **Punkt** und dann dem Namen der Klassen
         * in unserem Fall steht der Klassenselektor direkt nach dem img-Selektor was soviel heißt wie: *alle Bilder mit der Klasse user*
@@ -535,7 +532,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         ```
 
         * das Verteilen erledigt `float` für uns
-        * im Gegensatz zum Userbild `img.user`, sind die Klassen `.back` und `.next` durch ein Leerzeichen vom `footer`-Selektor getrennt, was soviel heißt wie: *alle Elemente mit der Klasse  .back oder .next im footer-Bereich*
+        * im Gegensatz zum Userbild `img.user`, sind die Klassen `.back` und `.next` durch ein Leerzeichen vom `footer`-Selektor getrennt, was soviel heißt wie: *alle Elemente mit der Klasse  .back oder .next im &lt;footer>-Bereich*
 
     * [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/f181735df7328798d18934b60e644137c4c10855)
 
@@ -573,7 +570,7 @@ Unsere Seite sieht schon gut aus, aber wie sieht sie am Handy aus? Der Browser h
     }
     ```
 
-    * `article figure img` sucht damit alle &img-Element eines &lt;article-Elements, die in einem &lt;figure-Element vorkommen
+    * `article figure img` sucht damit *alle &lt;img>-Elemente eines &lt;article>-Elements, die in einem &lt;figure>-Element vorkommen*
 
     * [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/d50277b75cc75a91191af608e01e523b7cea7498)
 
@@ -603,7 +600,7 @@ Unsere Seite sieht schon gut aus, aber wie sieht sie am Handy aus? Der Browser h
 
             * von der Seite "W3Schools CSS Box Shadow"
             * Google Suche "CSS Shadow Effects - W3Schools"
-            * [https://www.w3schools.com/css/css3_shadows_box.asp](https://www.w3schools.com/css/css3_shadows_box.asp)
+            * [https://www.w3schools.com/css/css3_shadows_box.asp](https://www.w3schools.com/css/css3_shadows_box.asp) (siehe "Cards")
 
         * anwenden können wir den Schatten über beliebige class-Attribute in `index.html`
 
@@ -626,12 +623,12 @@ Unsere Seite sieht schon gut aus, aber wie sieht sie am Handy aus? Der Browser h
         }
         ```
 
-        * der Browser sucht die Komma-getrennten Fontvarianten von Links nach Rechts
+        * der Browser sucht die Komma-getrennten Fonts von Links nach Rechts
         * der erste verfügbare Font wird angezeigt
 
 ### e) Icons mit Font Awesome
 
-Font Awesome ([https://fontawesome.com/](https://fontawesome.com/)) ist eine Icon-Bibliothek mit Hunderten von Webicons die wir in unseren Applikationen verwenden können. Um sie zu verwenden, müssen wir das Stylesheet der Bibliothek verlinken und können dann über Klassenattribute bei &lt;i>-Element die einzelnen Icons einbauen.
+Font Awesome ([https://fontawesome.com/](https://fontawesome.com/)) ist eine Icon-Bibliothek mit Hunderten von Webicons die wir in unseren Applikationen verwenden können. Um sie zu verwenden, müssen wir das Stylesheet der Bibliothek verlinken und können dann über Klassenattribute bei &lt;i>-Elementen die einzelnen Icons einbauen.
 
 * der Einbau des Stylesheets im &lt;-head>-Bereich von `index.html` erfolgt über ein sogenanntes **CDN** (*Content delivery network*). Es gibt viele solche CDNs, wir verwenden [https://cdnjs.com](https://cdnjs.com)
 
@@ -644,7 +641,7 @@ Font Awesome ([https://fontawesome.com/](https://fontawesome.com/)) ist eine Ico
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         ```
 
-        * die Attribute *integrity*, *crossorigin*, *referrerpolicy* ... TODO
+        * die Attribute *integrity*, *crossorigin*, *referrerpolicy* habe etwas mit der sicherheit beim Laden der Bibliothek zu tun, mehr dazu später
 
 * die Icons finden wir unter [https://fontawesome.com/icons](https://fontawesome.com/icons)
 
@@ -668,14 +665,14 @@ Font Awesome ([https://fontawesome.com/](https://fontawesome.com/)) ist eine Ico
 
 ### f) Webfonts mit Google Fonts
 
-Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die wir als **Webfonts** in unseren Applikationen direkt verwenden können. Die Auswahl der gewünschten Fonts erfolgt bequem auf [https://fonts.google.com/](https://fonts.google.com/) durch Klick auf den gewünschten Font und Auswahl der Font-Varianten. dabei können mehrere Fonts, bzw. Varianten ausgewählt werden und als sogenannte **@import-Rule** im CSS-Stylesheet `main.css` eingetragen werden
+Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die wir als **Webfonts** in unseren Applikationen direkt verwenden können. Die Auswahl der gewünschten Fonts erfolgt bequem auf [https://fonts.google.com/](https://fonts.google.com/) durch Klick auf den gewünschten Font und Auswahl der Font-Varianten. Dabei können mehrere Fonts, bzw. Varianten ausgewählt werden und als sogenannte **@import-Rule** im CSS-Stylesheet `main.css` eingetragen werden
 
 * Vorgang dabei:
     * Font auswählen (z.B. *Open Sans*)
-    * die font-Variante wählen: *Select this style* (z.B. *Regular 400* und *Regular 400 italic*)
+    * die font-Variante wählen: *+Select this style* (z.B. *Regular 400* und *Regular 400 italic*)
     * gerne auch weiter Schriftarten auswählen, wie *Roboto* mit *Light 300*
     * zum Schluss im Tab *Selected family* unter *Use on the web* **@import auswählen**
-    * und den Inhalt des &lt;style-elements an den Anfang von `main.css` kopieren
+    * und den Inhalt des &lt;style>-Elements an den Anfang von `main.css` kopieren
 
         ```css
         /* Google Fonts laden */
@@ -703,13 +700,13 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
 
     * [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/c49dec0d4765758d29b3d3160046559c27751baf)
 
-    * für die Überschriften wählen wir dann noch **Montserat** (*Light 300*) und ersetzen die @import-Anweisung dementsprechend
+    * für die Überschriften wählen wir dann noch **Montserat** (*Light 300*) und ersetzen die @import-Anweisung mit
 
         ```css
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:ital@0;1&family=Roboto:wght@300&display=swap');
         ```
 
-    * mit dieser CSS-Regel wenden wir den neuen Font auf alle &lt;h1>-, &lt;h2<-> und &lt;h3>-Elemente an
+    * mit dieser CSS-Regel wenden wir den neuen Font auf alle &lt;h1>-, &lt;h2>- und &lt;h3>-Elemente an
 
         ```css
         h1, h2, h3 {
@@ -725,7 +722,7 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
 
 * in `index.html`: wir definieren den Kartenbereich
     * neue Überschrift vor der Linkliste
-    * danach den Kartenbereich als *DIV* mit einem **id-Attribut**
+    * danach den Kartenbereich als &lt;div>-Element mit einem **id-Attribut**
 
         ```html
         <h3>Übersichtskarte</h3>
@@ -771,7 +768,7 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
                 /* Elemente mit class="user" */
             }
             #map {
-                /* das (einzige) Element mit id="map"
+                /* das (einzige) Element mit id="map" */
             }
             ```
 
@@ -802,7 +799,7 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
     * lesbarer als die von uns verwendete, sogenannte *minified*-Version der Javascriptdatei, ist der Originalquelltext von  [leaflet-src.js](https://unpkg.com/leaflet@1.7.1/dist/leaflet-src.js)
     * beim Einbinden aus dem CDN verwenden wir zusätzlich zwei Attribute
         * *integrity*: stellt sicher, dass der Inhalt von `leaflet.css` und `leaflet.js` "original" ist
-        * *crossorigin*: **TODO** Ja, Ja, sehr kompliziert, das kommt später ...
+        * *crossorigin*: tja, sehr kompliziert, das kommt später ...
     * Leaflet wird übrigens auch auf github.com entwickelt: <https://github.com/Leaflet/Leaflet>
 
 ### c) Javascript Code für die Karte kopieren
@@ -846,7 +843,7 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
         * [Emerald Lakes](https://de.wikipedia.org/wiki/Emerald_Lakes) der Wikipedia als Bezugspunkt für unserer Etappe
         * -39.13°, 175.65°
         * Gradzeichen müssen weg und als Komma (bleibt) der Punkt
-        * Lat/Lng jeweils 2 x ersetzen bei **setView()** und **L.marker**
+        * Lat/Lng jeweils 2 x ersetzen bei **setView()** und **L.marker()**
         * wir ändern auch den Zoomfaktor von 13 auf 11
         * und den Popuptitel auf &lt;h3>Tongariro Nationalpark &lt;/h3>
 
@@ -854,32 +851,32 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
 
 ### d) Was bedeutet der Javascript-Code den wir gerade geändert haben?
 
-1. die Karte initialisieren
+* die Karte initialisieren
 
     ```javascript
     var map = L.map('map')
     ```
 
-    * dreimal *map*, wie kompliziert, gut, dass das Syntax-Highlighting drei verschieden Farben anzeigt :-)
+    * dreimal *map*, wie kompliziert, gut, dass das Syntax-Highlighting im VS Code drei verschieden Farben anzeigt :-)
     * **var map** definiert eine *Variable* mit dem Namen `map`. Wir könnten sie auch `karte` nennen, dann müssten wir alle Vorkommen von `map` (in der selben Farbe wie bei `var map`) mit `karte` ersetzen
     * **L.map()** kommt von der Leaflet Bibliothek (`L` steht für Leaflet) und ist eine sogenannte "*Methode*". Methoden sind Codeblöcke, die *Irgendetwas können*, in diesem Fall, eine Karte initialisieren
-    * **'map'** ist das sogenannte *Argument* der *Methode* `L.map()` und bestimmt den Wert des id-Attributs unseres &lt;iv>-Elements (allerdings ohne #) in dem die Karte gezeichnet werden soll
+    * **'map'** ist das sogenannte *Argument* der *Methode* `L.map()` und bestimmt den Wert des id-Attributs unseres &lt;div>-Elements (allerdings ohne #) in dem die Karte gezeichnet werden soll
 
-2. den Ausschnitt setzen
+* den Ausschnitt setzen
 
     ```javascript
     .setView([-39.13, 175.65], 10)
     ```
 
     * ist eine weitere Leaflet Methode, die den Kartenausschnitt setzt und zwei Argumente erwartet:
-        * Argument 1: die Lat/Lng Koordinaten `[-39.13, 175.65]` des Ausschnitts als sogenannter **Array**
+        * Argument 1: die Lat/Lng Koordinaten `[-39.13, 175.65]` des Ausschnitts als sogenannten **Array**
             * **WICHTIG**: wir erkennen Arrays an eckigen Klammern
             * **WICHTIG**: Array-Elemente sind durch Kommas getrennt
             * **WICHTIG**: die Reihenfolge der Elemente in Arrays ist fixiert
 
         * Argument 2: der Zoomlevel als **Number** zwischen `1` (*Welt*) und 20-25 (*Detail*, je nach Kartenhintergrund), wir sind mit `11` mitten drin
 
-3. die Hintergrundkarte definieren und an die Karte hängen
+* die Hintergrundkarte definieren und an die Karte hängen
 
     ```javascript
     L.tileLayer().addTo(map);
@@ -910,13 +907,13 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
                 ```
 
                 * `attribution` ist der *Key*
-                * `'&amp;copy; ....contributors'` ist der *Value*
+                * `'&copy; ....contributors'` ist der *Value*
             * **WICHTIG**: die Reihenfolge der Elemente in Objekten ist nicht zwingend fixiert
 
         * Umgesetzt wird das Ganze im rechten, unteren Eck der Karte
     * `.addTo(map)` hängt den Kartenhintergrund an die Karte
 
-4. den Marker positionieren und zur Karte hinzufügen
+* den Marker positionieren und zur Karte hinzufügen
 
     ```javascript
     L.marker().addTo(map)
@@ -925,29 +922,28 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
     * die Leaflet-Methode `L.marker()` erwartet ein Argument und zwar einen Array mit der Lat/Lng Koordinate des Markers (`[-39.13, 175.65]`)
     * `.addTo(map)` hängt den Marker an die Karte
 
-5. ein Popup hinzufügen und öffnen
+* ein Popup hinzufügen und öffnen
 
     ```javascript
     .bindPopup().openPopup()
     ```
 
-    * `.bindPopup()` erwartet ein Argument und zwar den text für das Popup, der auch HTML-Markup enthalten kann
+    * `.bindPopup()` erwartet ein Argument und zwar den Text für das Popup, der auch HTML-Markup enthalten kann
     * `.openPopup()` öffnet das Popup in der Karte
 
 * **Sidestep: Fluent Interfaces**
-    * der `L.marker` Code ist ein gutes Beispiel für sogenannte "*Fluent Interfaces*"
+    * der `L.marker` Code ist ein gutes Beispiel für ein sogenanntes "*Fluent Interface*"
     * der Code wird dabei beinahe in Form von Sätzen natürlicher Sprache programmiert
     * siehe [https://de.wikipedia.org/wiki/Fluent_Interface](https://de.wikipedia.org/wiki/Fluent_Interface)
     * die einzelnen Schritte werden durch einen Punkt getrennt
-    * `L.marker().addTo().bindPopup().openPopup()` steht dabei für den Satz
-    * *definiere einen Marker, füge ihn der Karte hinzu, definiere dort ein zusätzliches Popup und öffne es*
+    * `L.marker().addTo().bindPopup().openPopup()` steht dabei für den Satz *definiere einen Marker, füge ihn der Karte hinzu, definiere dort ein zusätzliches Popup und öffne es*
 
 ### e) bleibt noch, das Skript in ein externes main.js zu verschieben
 
 * **bevor wir das tun, die Frage**: warum ist das &lt;script>-Element ganz am Ende der Seite?
-    * `var map = L.map('map')` ist der Grund, denn `'map'` verweist auf unseren map-DIV mit der ID 'map'
-    * deshalb muss der map-DIV vor dem &lt;script>-Element stehen, denn
-    * der Browser lädt die Seite von oben nach unten
+    * `var map = L.map('map')` ist der Grund, denn `'map'` verweist auf unseren &lt;div>-Element mit der ID 'map' - nennen wir ihn ab jetzt **map-DIV**
+    * deshalb muss der map-DIV vor dem &lt;script>-Element stehen
+    * denn der Browser lädt die Seite von oben nach unten
     * würde das &lt;script>-Element oberhalb des map-DIV stehen, wäre der map-DIV noch nicht "bekannt"
     * deshalb der Trick mit dem &lt;script>-Element am Ende der Seite
 
@@ -1017,9 +1013,9 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
 
         * *Map container not found* ist der entscheidende Hinweis
 
-        * wir müssen also sicherstellen, dass das Skript in `main.js` erst ausgeführt wird, wenn die ganze `index.html` Seite gelanden ist und dabei hilft uns das
+        * wir müssen also sicherstellen, dass das Skript in `main.js` erst ausgeführt wird, wenn die ganze `index.html` Seite gelanden ist und dabei hilft uns
 
-    * das **defer-Attribut** beim &lt;script>-Element
+    * das **defer-Attribut** beim &lt;script>-Element [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/34a080e96fd8f3f74acfce18a870c5e3ab48739f)
 
         ```html
         <script defer src="main.js"></script>
@@ -1043,8 +1039,6 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
 
     * wir haben ja ein 100x100 Pixel großes user-Bild, das wir dafür verwenden können
 
-    wir jetzt im head-Bereich
-
     * über den Baustein **link:favicon** definieren wir es im head-Bereich
 
         ```html
@@ -1054,8 +1048,10 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
     * und ändern den Pfad zum Bild sowie den Typ, da wir ja ein .jpg-Bild haben
 
         ```html
+        <!-- Tab-Vorschaubild -->
         <link rel="icon" href="images/user.jpg" type="image/jpg" />
-        
+        ```
+
         [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/0bfb826bba0c1dac6aa4e73484ddee980bb76cf3)
 
 ## das war's :-)
