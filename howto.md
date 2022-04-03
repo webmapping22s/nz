@@ -4,9 +4,9 @@
 
 ### a) Vorbereitung
 
-* `index.html` Datei erstellen + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/f122d991b83d0b89de2e2535588234e5fd162155)
+* `index.html` Datei erstellen [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/f122d991b83d0b89de2e2535588234e5fd162155)
 
-* den **html 5** Baustein von VS Code einfügen + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/25694a79c21569b47f41fbc87e725054358da6d5)
+* den **html 5** Baustein von VS Code einfügen [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/25694a79c21569b47f41fbc87e725054358da6d5)
 
 * **Sidestep: VS Code Hilfestellungen**
 	* Bausteine wie z.B. oben, *autocomplete* bei allen Elementen, Attributen
@@ -16,43 +16,43 @@
 
 ### b) Die HTML-Seite entwickeln
 
-* Seitensprache über das lang-Attribut auf Deutsch ändern + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/1faaf1846af37d286f51ad7b444e4e8ea8302b1c)
+* Seitensprache über das lang-Attribut auf Deutsch ändern [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/1faaf1846af37d286f51ad7b444e4e8ea8302b1c)
 
     ```html
     <html lang="de">
     ```
 
-* Seitentitel `title` ändern + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/d0fb59e601c396e2757ae6e7477da469d4ebf923)
+* Seitentitel `title` ändern [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/d0fb59e601c396e2757ae6e7477da469d4ebf923)
 
     ```html
     <title>Neuseelandreise</title>
     ```
 
-* Titel `h1` (für header 1) + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/2974e86d25af2d4bb92cef6a3ee13143b050b4c8)
+* Titel `h1` (für header 1) [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/2974e86d25af2d4bb92cef6a3ee13143b050b4c8)
 
     ```html
     <h1>Neuseelandreise</h1>
     ```
 
-* Untertitel `h2` (für header 2) und kursiv `em` (für emphasis) + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5f90866a7a14816569dbf898ae96af2326271608)
+* Untertitel `h2` (für header 2) und kursiv `em` (für emphasis) [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5f90866a7a14816569dbf898ae96af2326271608)
 
     ```html
     <h2><em>Tongariro-Nationalpark</em></h2>
     ```
 
-* Introtext `p` (für paragraph) hinzufügen -  Wikipedia-Suche "*Tongariro-Nationalpark*", die ersten drei Absätze + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/a923203702929b30297db3da6c77c06d2261a30e)
+* Introtext `p` (für paragraph) hinzufügen -  Wikipedia-Suche "*Tongariro-Nationalpark*", die ersten drei Absätze [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/a923203702929b30297db3da6c77c06d2261a30e)
 
     ```html
     <p>Der Tongariro-Nationalpark  ... Vulkane als heilig verehren.</p>
     ```
 
-* einen Begriff mit `strong` fett formatieren + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/752ead6adf615e6c00bd7cbfa4aac08cb9ea28d5)
+* einen Begriff mit `strong` fett formatieren [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/752ead6adf615e6c00bd7cbfa4aac08cb9ea28d5)
 
     ```html
     <strong>Kultstätten der Māori</strong>
     ```
 
-* Link zur Quelle als `a` (wie anchor) + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/4b4182e0c83b774b61bc05457514876751a0d84a)
+* Link zur Quelle als `a` (wie anchor) [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/4b4182e0c83b774b61bc05457514876751a0d84a)
 
     ```html
     (Quelle: <a href="https://...">Wikipedia</a>)
@@ -70,7 +70,7 @@
             * mit dem Namen `attraction.jpg` (oder `attraction.webp` je nach Browser)
         * und [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5766bf011430e9790045582047a7bc3b51cc339d)
 
-    * die Abbildung als &lt;figure>-Element mit einem Bild als &lt;img>-Element + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/b62016fa6a7cb77299eeeca859a89f41235a2122)
+    * die Abbildung als &lt;figure>-Element mit einem Bild als &lt;img>-Element [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/b62016fa6a7cb77299eeeca859a89f41235a2122)
 
         ```html
         <figure>
@@ -82,7 +82,7 @@
         * das **src-Attribut** (wie source) mit dem Ablageort des Bildes
         * das **alt-Attribut** (wie alternativ) als Beschreibung des Bildes für Screenreader
 
-    * die Bildunterschrift als &lt;figcaption>-Element mit einem Link zur Bildquelle + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/1fb367f887c128278893d89ad665d4669bd4a3fb)
+    * die Bildunterschrift als &lt;figcaption>-Element mit einem Link zur Bildquelle [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/1fb367f887c128278893d89ad665d4669bd4a3fb)
 
         ```html
         <figcaption>
@@ -90,7 +90,7 @@
         </figcaption>
         ```
 
-* eine Linkliste mit drei weiterführenden Links vorbereiten + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/655a817ef2d6107b5e7c6627f28f53ac7cae1ab3)
+* eine Linkliste mit drei weiterführenden Links vorbereiten [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/655a817ef2d6107b5e7c6627f28f53ac7cae1ab3)
 
     ```html
     <h3>Links</h3>
@@ -101,11 +101,11 @@
     </ul>
     ```
 
-* und mit Weblinks der Wikipedia-Seite komplettieren + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5d701ac5b2917e541ab4029d444694b3a8d1b466)
+* und mit Weblinks der Wikipedia-Seite komplettieren [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5d701ac5b2917e541ab4029d444694b3a8d1b466)
 
 ### c) Seitenstruktur verfeinern
 
-* wir verpacken alles im &lt;body-Element in ein &lt;article>-Element innerhalb eines &lt;main>-Elements + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/c8a1a889dcf7e3027e61a7bb48782a4cf1e88ca4)
+* wir verpacken alles im &lt;body-Element in ein &lt;article>-Element innerhalb eines &lt;main>-Elements [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/c8a1a889dcf7e3027e61a7bb48782a4cf1e88ca4)
 
     ```html
     <body>
@@ -143,7 +143,7 @@
 
         * und [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5766bf011430e9790045582047a7bc3b51cc339d)
 
-* wir bauen das Banner in einem neuen &lt;header>-Element als &lt;img>-Element ein + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5d0ebd2d7069b0ce3b2e709881d44902b1236ac4)
+* wir bauen das Banner in einem neuen &lt;header>-Element als &lt;img>-Element ein [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5d0ebd2d7069b0ce3b2e709881d44902b1236ac4)
 
     ```html
     <main>
@@ -178,7 +178,7 @@
 
         * und [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/19676e6fab8a4de13114ab022ddd5df38e82f1df)
 
-* Userbild mit Bildquelle und Bild als Link direkt unter dem Bannerbild einbauen + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/6cd882b76dc945b5a38540b40da4d2c2cbbd20e5)
+* Userbild mit Bildquelle und Bild als Link direkt unter dem Bannerbild einbauen [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/6cd882b76dc945b5a38540b40da4d2c2cbbd20e5)
 
     ```html
     <a href="#"><img src="images/user.jpg" alt="Another one rides the bus"></a>
@@ -209,7 +209,7 @@
 
     * die Pfeile finden wir auf [https://unicode-table.com](https://unicode-table.com)
 
-    * *Pfeile / 13. Navigation Arrows / Nach links gerichteter mittlerer Barb-Pfeil* + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/6e0373862331e2204098c4b5533db59354c4dad8)
+    * *Pfeile / 13. Navigation Arrows / Nach links gerichteter mittlerer Barb-Pfeil* [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/6e0373862331e2204098c4b5533db59354c4dad8)
 
     ```html
     <a href="#">🡨 vorhergehende Etappe</a>
@@ -220,14 +220,14 @@
 
 * mit Erstellung eurer github-Repos und der Zuteilung der github-User zu den Etappen können die #-Links noch angepasst werden
 
-* Vor- und Zurücklinks für die Tongariro-Seite + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/cc99b19ce1587e58bdd9d6332eaa338843dc05ef)
+* Vor- und Zurücklinks für die Tongariro-Seite [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/cc99b19ce1587e58bdd9d6332eaa338843dc05ef)
 
     ```html
     <a href="https://paulasp3.github.io/nz/index.html">🡨 vorhergehende Etappe</a>
     <a href="https://andrea-1408.github.io/nz/index.html">nächste Etappe 🡪</a>
     ```
 
-* Userlink zum github-Repo + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/9734593ca1135024e0c7b9c35166233bf005aa0d)
+* Userlink zum github-Repo [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/9734593ca1135024e0c7b9c35166233bf005aa0d)
 
     ```html
     <a href="https://github.com/webmapping"><img src="images/user.jpg" alt="Another one rides the bus"></a>
@@ -258,7 +258,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
         * weitere Stile / Deklarationen werden durch **Semikolon getrennt** (z.B. color:green;font-size:40px;)
 
-    * wir verlängern das style-Attribut + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/8c275405f69b771736a0a3b83c8e9560f51eb5bd)
+    * wir verlängern das style-Attribut [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/8c275405f69b771736a0a3b83c8e9560f51eb5bd)
 
         ```html
         <h1 style="color:green;font-size:40px;border:3px dashed black;background-color:blue;width:50%">Neuseelandreise</h1>
@@ -304,7 +304,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         </style>
         ```
 
-    * das style-Attribut löschen wir + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/af344f726c62e598a011184e0710ea837d276a47)
+    * das style-Attribut löschen wir [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/af344f726c62e598a011184e0710ea837d276a47)
 
     * optisch ändert sich nichts
 
@@ -348,7 +348,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     <link rel="stylesheet" href="main.css"> 
     ```
 
-* mit **STRG+Klick** erzeugt VS Code `main.css` für uns + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/e1acd19836ccff5237afc39647afcc6ed9858f17)
+* mit **STRG+Klick** erzeugt VS Code `main.css` für uns [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/e1acd19836ccff5237afc39647afcc6ed9858f17)
 
 * wir verschieben den Inhalt von &lt;style> dort hin, löschen das &lt;style>-element und verwenden Beautify in `main.css`
 
@@ -370,7 +370,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
 ### c) Layout der Etappe
 
-* Seitenhintergrund auf Hellgrau setzen+ [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/3efee9d188977d8765b5463876b5444361c3e8dc)
+* Seitenhintergrund auf Hellgrau setzen [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/3efee9d188977d8765b5463876b5444361c3e8dc)
 
     ```css
     body {
@@ -378,7 +378,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-* &lt;main>-Bereich auf Weiß setzen + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/21cebbc6fbd5efbec265a03a977637ff8282cfb1)
+* &lt;main>-Bereich auf Weiß setzen [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/21cebbc6fbd5efbec265a03a977637ff8282cfb1)
 
     ```css
     main {
@@ -386,7 +386,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-* maximale Seitenbreite auf 1024 Pixel setzen + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/72f8135169ac9ae10f29189ca6b22c910be7be18)
+* maximale Seitenbreite auf 1024 Pixel setzen [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/72f8135169ac9ae10f29189ca6b22c910be7be18)
   
     ```css
     main {
@@ -395,7 +395,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-* Seite zentrieren + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/64d3908cf2c50d7be767435b636f7cceade5a355)
+* Seite zentrieren [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/64d3908cf2c50d7be767435b636f7cceade5a355)
 
     ```css
     main {
@@ -404,7 +404,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-* der Artikelinhalt klebt am Rand - Abstände einführen + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/df32b6ced75e8fb4f7042c6f009b7b7b4d145227)
+* der Artikelinhalt klebt am Rand - Abstände einführen [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/df32b6ced75e8fb4f7042c6f009b7b7b4d145227)
 
     ```css
     article {
@@ -414,7 +414,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
     * `em` bestimmt die Abstände in Abhängigkeit der schriftgröße - siehe [Wikipedia:em (Schriftsatz)](https://de.wikipedia.org/wiki/Em_(Schriftsatz))
 
-* Absätze im Artikel als Blocksatz + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/bf1d5f9a1427cc72d2c6a52c6e1056b5f7a4150e)
+* Absätze im Artikel als Blocksatz [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/bf1d5f9a1427cc72d2c6a52c6e1056b5f7a4150e)
 
     ```css
     article p {
@@ -426,7 +426,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
     * **Wichtig**: das heißt dann: *alle p-Element innerhalb des article-Elements*
 
-* Zeilenhöhe gleich noch etwas vergrößeren + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/cee9b45549b602642651fa748b6aa48611195894)
+* Zeilenhöhe gleich noch etwas vergrößeren [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/cee9b45549b602642651fa748b6aa48611195894)
 
     ```css
     article p {
@@ -435,7 +435,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-* die Links im Artikel färben wir Schwarz + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/9d95781f8b0490bd6a64cbfc78276fce7ff8888a)
+* die Links im Artikel färben wir Schwarz [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/9d95781f8b0490bd6a64cbfc78276fce7ff8888a)
 
     ```css
     a {
@@ -451,7 +451,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
     * **:hover** kann man auch für andere element verwenden
 
-* das Userbild im Header zentrieren wir über einen Trick: wir setzen den ganzen Headerbereich auf zentriert + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5eeccf2e3c7f23ba19ddc18a958d1b207793341d)
+* das Userbild im Header zentrieren wir über einen Trick: wir setzen den ganzen Headerbereich auf zentriert [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5eeccf2e3c7f23ba19ddc18a958d1b207793341d)
 
     ```css
     header {
@@ -483,7 +483,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
         [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/935fc7906b84a6845e90331b2cc28ee6a0ff6ead)
 
-* wir schieben das Bild um die halbe Bildbreite nach Oben in das Banner hinein + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/170cbba77312d00b763eada69413448e6441a2a8)
+* wir schieben das Bild um die halbe Bildbreite nach Oben in das Banner hinein [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/170cbba77312d00b763eada69413448e6441a2a8)
 
     ```css
     img.user {
@@ -494,7 +494,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
 * der Footer kann auch noch besser aussehen
 
-    * wir grenzen ihn Oben mit einer Linie ab + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/ad6f4079e5c744d27e5c93bd1cdd39897bc30e06)
+    * wir grenzen ihn Oben mit einer Linie ab [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/ad6f4079e5c744d27e5c93bd1cdd39897bc30e06)
 
         ```css
         footer {
@@ -502,7 +502,7 @@ wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         }
         ```
 
-    * und ändern die Abstände + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/6002858046442679be40808b78f45beff7a1eccc)
+    * und ändern die Abstände [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/6002858046442679be40808b78f45beff7a1eccc)
 
     ```css
     footer {
@@ -617,7 +617,7 @@ Unsere Seite sieht schon gut aus, aber wie sieht sie am Handy aus? Der Browser h
 
             * [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/22c5a87c92252e9c00556024e53e5bc6ef1ffea2)
 
-    * schließlich ändern wir den Anzeige-Font der Seite + [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/9a2cbf72b226ccfa862c3fdb77ada05f5ea5cd44)
+    * schließlich ändern wir den Anzeige-Font der Seite [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/9a2cbf72b226ccfa862c3fdb77ada05f5ea5cd44)
 
         ```css
         body {
