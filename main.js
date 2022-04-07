@@ -62,5 +62,6 @@ for (let etappe of ETAPPEN) {
 
 // DOC Hütten anzeigen
 for (let hut of HUTS) {
-    L.marker([hut.lat, hut.lng]).addTo(map);
+    L.circleMarker([hut.lat, hut.lng]).addTo(map);
 }
+
