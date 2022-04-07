@@ -14,6 +14,7 @@ console.log("text");
 console.log('text');
 console.log('id="map"');
 console.log(`latitude = ${lat}`);
+console.log(ETAPPEN);
 
 let popup = `
     <h3>Tongariro Nationalpark</h3>
@@ -32,3 +33,5 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.marker([lat, lng]).addTo(map)
     .bindPopup(popup)
     .openPopup();
+
+    
