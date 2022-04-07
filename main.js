@@ -62,6 +62,9 @@ for (let etappe of ETAPPEN) {
 
 // DOC Hütten anzeigen
 for (let hut of HUTS) {
-    L.circleMarker([hut.lat, hut.lng]).addTo(map);
+    let popup = `
+        <h3>${hut.name}</h3>
+    `;
+    L.circleMarker([hut.lat, hut.lng]).addTo(map).bindPopup(popup);
 }
 
