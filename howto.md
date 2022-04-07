@@ -339,7 +339,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
 ### b) Ein verlinktes externes Stylesheet main.css
 
-* noch eleganter ist dieses Trennung von Content und Layout
+* noch eleganter ist die Trennung von Content und Layout
 
 * mit dem Baustein **link** erzeugen wir im &lt;head-Bereich einen Link auf ein externes Stylesheet
 
