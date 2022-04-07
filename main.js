@@ -14,13 +14,24 @@ console.log("text");
 console.log('text');
 console.log('id="map"');
 console.log(`latitude = ${lat}`);
+
 console.log(ETAPPEN);
+console.log(ETAPPEN[0]);
+console.log(ETAPPEN[0].nr);
+console.log(ETAPPEN[0].github);
+console.log(ETAPPEN[0].titel);
+console.log(ETAPPEN[0].wikipedia);
+console.log(ETAPPEN[0].lat);
+console.log(ETAPPEN[0].lng);
+
 
 let popup = `
-    <h3>Tongariro Nationalpark</h3>
+    <h3>${ETAPPEN[0].titel} (Etappe ${ETAPPEN[0].nr})</h3>
     <ul>
-        <li>geogr. Länge: ${lng}</li>
-        <li>geogr. Breite: ${lat}</li>
+        <li>geogr. Länge: ${ETAPPEN[0].lng}</li>
+        <li>geogr. Breite: ${ETAPPEN[0].lat}</li>
+        <li><a href="${ETAPPEN[0].wikipedia}">Link zur Wikipediaseite</a></li>
+        <li><a href="${ETAPPEN[0].github}">Link zur Etappenseite</a></li>
     </ul>
 `;
 
