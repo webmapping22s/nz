@@ -131,4 +131,4 @@ const ETAPPEN = [{
     "wikipedia": "https://de.wikipedia.org/wiki/Auckland",
     "lat": -36.84042,
     "lng": 174.73987
-}]
+}];

@@ -15,6 +15,8 @@
 
 * ganz am Anfang die Variablendeklaration *const ETAPPEN =* ergänzen
 
+* ganz am Ende noch ein *Semikolon* nach dem Array ergänzen und das war's
+
 ```js
 const ETAPPEN = [{
    "nr": 1,
@@ -25,5 +27,5 @@ const ETAPPEN = [{
    "lng": 172.62028
 },{
    // weitere Etappen ...
-}]
+}];
 ```
