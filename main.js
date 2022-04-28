@@ -2,7 +2,10 @@
 // einzeiliger Kommentar
 let zoom = 11;
 
-let coords = [-39.13, 175.65];
+let coords = [
+    ETAPPEN[13].lat,
+    ETAPPEN[13].lng
+];
 //console.log(coords);
 //console.log(coords[0]);
 //console.log(coords[1]);
