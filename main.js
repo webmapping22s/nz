@@ -43,7 +43,10 @@ for (let etappe of ETAPPEN) {
     </ul>
     `;
     //console.log(etappe);
-    L.marker([etappe.lat, etappe.lng]).addTo(map).bindPopup(popup);
+    let mrk = L.marker([etappe.lat, etappe.lng]).addTo(map).bindPopup(popup);
+    if (etappe.nr == 14) {
+        mrk.openPopup();
+    }
 
     // Etappennavigation erweitern
     let link = `<a href="https://${etappe.github}.github.io/nz/" class="etappenLink" title="${etappe.titel}">${etappe.nr}</a>`;
