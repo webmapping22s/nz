@@ -223,3 +223,187 @@
     ```html
     let link = `<a href="https://${etappe.github}.github.io/nz/" class="etappenLink" title="${etappe.titel}">${etappe.nr}</a>`;
     ```
+
+## Code cleanup und ein paar if-Abfragen ...
+
+### a) unbenötigten Code löschen
+
+* den händisch gesetzten Marker entfernen wir
+
+    ```javascript
+    L.marker([lat, lng]).addTo(map)
+        .bindPopup(popup)
+        .openPopup();
+    ```
+    
+* damit brauchen wir auch die Definition der Variable `popup` nicht mehr
+
+    ```javascript
+    let popup = `
+    <h3>${ETAPPEN[0].titel} (Etappe ${ETAPPEN[0].nr})</h3>
+    <ul>
+        <li>geogr. Länge: ${ETAPPEN[0].lng}</li>
+        <li>geogr. Breite: ${ETAPPEN[0].lat}</li>
+        <li><a href="${ETAPPEN[0].wikipedia}">Link zur Wikipediaseite</a></li>
+        <li><a href="${ETAPPEN[0].github}">Link zur Etappenseite</a></li>
+    </ul>
+    `;
+    ```
+
+* die zwei Variablen `lat` und `lng` sind auch überflüssig
+
+    ```javascript
+    let lat = -39.13;
+    let lng = 175.65;
+    ```
+    
+[🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/d1ac20788bf758f3cf092a9fea8ee3f6c13d9f62)
+
+### b) auf die eigene Etappe blicken
+
+* wir verwenden das Etappenobjekt für die Koordinaten auf die wir blicken
+
+    * statt
+
+        ```javascript
+        let coords = [-39.13, 175.65];
+        ```
+
+    * verwenden wir 
+
+        ```javascript
+        let coords = [
+            ETAPPEN[13].lat,
+            ETAPPEN[13].lng,
+        ];
+        ```
+
+        [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/a249e993a8fc16d336a3f4edffbbee892924548c)
+
+        * `13` ist der *Index* für das eigene Etappenobjekt im Etappen-Array - also die Etappennummer minus 1
+        * mit Werten von 0 bis 18 können wir auch auf andere Etappen blicken ...
+
+* wir öffnen das Popup für den Marker in der **for of** Schleife des ETAPPEN-Objekts
+
+    * dazu müssen wir uns den Marker in einer Variablen merken
+
+    * statt
+        ```javascript
+        L.marker([etappe.lat, etappe.lng]).addTo(map).bindPopup(popup);
+        ```
+
+    * verwenden wir 
+        ```javascript
+        let mrk = L.marker([etappe.lat, etappe.lng]).addTo(map).bindPopup(popup);
+        ```
+
+    * in einer **if-Abfrage** können wir den Marker dann öffnen, sobald wir bei unserer Etappennummer sind
+        ```javascript
+        if (etappe.nr == 14) {
+            mrk.openPopup();
+        }
+        ```
+
+    [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/05c8a61cd939ea0c84d04fa7fae53d29a22e4e0a)
+
+    * **Sidestep: if-Abfrage**
+
+        * bei **if-Abfragen** kann als **if**, **else-if**, **else** verwendet werden
+
+        * in den runden Klammern steht die Bedingung, die erfüllt werden soll
+            * **==** überprüft, ob die Ausdrücke Links und Rechts gleich sind
+            * **!=** überprüft, ob sie ungleich sind
+            * **>**, **>=**, **&lt;**, **&lt;=** gibt es natürlich auch noch
+            * und noch mehr ... für jetzt genügt es aber 
+
+        * in den geschwungenen Klammern steht der Code, der ausgeführt werden soll, wenn eine Bedingung zutrifft
+
+### c) die Etappen-Navigation optisch verfeinern
+
+* wenn wir schon bei unserer eigenen Etappe sind, können wir auch gleich die Etappennavigation stylen
+
+* wir erinnern uns, dass wir die Navigationskästchen über `class="etappenLink"` in `main.css` stylen
+
+    * das eigene Kästchen soll jetzt hellgrau werden und der Link nicht anklickbar sein (wir sind ja schon hier)
+
+    * deshalb führen vor der **if-Abfrage** eine Variable `navClass` ein und geben ihr den default-Wert `etappenLink`
+
+        ```javascript
+        let navClass = "etappenLink";
+        ```
+        
+    * in der **if-Abfrage** schreiben wir bei unserer Etappe eine zweite Klasse `etappeAktuell` dazu
+            
+        ```javascript
+        if (etappe.nr == 14) {
+            mrk.openPopup();
+            navClass = "etappenLink etappeAktuell";
+        }
+        ```
+
+    * damit können wir `navClass` beim Template-String für den link verwenden
+
+    ```javascript
+    let link = `<a href="https://${etappe.github}.github.io/nz/" class="${navClass}" title="${etappe.titel}">${etappe.nr}</a>`;
+    ```
+
+    * mit einer neuen CSS-Regel `.etappeAktuell` in `main.css` wird das Kästchen verändert
+
+        ```css
+        .etappeAktuell {
+            background: silver;
+            color: white;
+            text-decoration: none;
+            pointer-events: none;
+        }
+        ```
+
+        * das eigene Kästchen ist jetzt hellgrau mit weißer Schrift, ohne Unterstreichung und nicht klickbar
+
+    [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/e5a6e160bb229355cc2e95459a65202be418fca0)
+
+    * bei der Gelegenheit setzen wir die Kästchen beim Format `.etappenLink` noch etwas von einander ab
+
+        ```css
+        .etappenLink {
+            /* bestehende Stile */
+            margin-right: 2px;
+        }
+        ```
+
+        [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/b178cf7952664e6b044cb6c71cf09817bb168b0c)
+
+
+### d) offene von geschlossenen Hütten unterscheiden
+
+* in der **for-of** Schleife der Hütten verwenden wir eine weitere **if-Abfrage**, um geöffnete Hütten *grün* und geschlossene Hütten *rot* einzufärben
+
+* dazu führen wir am Beginn der for-Schleife die Variable `statusColor` ohne default-Wert ein
+
+    ```javascript
+    let statusColor;
+    ```
+
+* mit einer **if** / **else** Abfrage setzen wir dann die gewünschte Farbe, je nachdem ob `huts.open` wahr oder falsch ist
+
+    ```javascript
+    if (huts.open == true) {
+        statusColor = "green";
+    } else {
+        statusColor = "red";
+    }
+    ```
+
+* damit die Kreise auch ihre Farbe ändern, ergänzen wir die Kreisfarbe als Optionen-Objekt beim `L.circleMarker` Aufruf
+
+    ```javascript
+    L.circleMarker([hut.lat, hut.lng], {
+        color: statusColor
+    }).addTo(map).bindPopup(popup);
+    ```
+
+    [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/8e03a1366c63a5065d743ed7c526a0600b3f3fa2)
+
+* woher weiß man das, mit dem Optionen-Objekt?
+
+    * die Leaflet-Docs helfen uns: <https://leafletjs.com/reference.html#circlemarker> :-)
