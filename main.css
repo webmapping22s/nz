@@ -94,3 +94,12 @@ footer .next {
     text-decoration: none;
     pointer-events: none;
 }
+
+/* Stile für die HOWTO Links */
+details {
+    padding: 1em;
+}
+
+details summary {
+    cursor: pointer;
+}
