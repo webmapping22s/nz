@@ -91,3 +91,6 @@ for (let hut of HUTS) {
     }).addTo(map).bindPopup(popup);
 }
 
+L.control.scale({
+    imperial: false,
+}).addTo(map);
