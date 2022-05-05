@@ -35,6 +35,9 @@ let map = L.map('map', {
     ],
 });
 
+let layerControl = L.control.layers({
+    "OpenStreetMap Grau": startLayer
+}).addTo(map);
 
 for (let etappe of ETAPPEN) {
     let popup = `
