@@ -36,7 +36,11 @@ let map = L.map('map', {
 });
 
 let layerControl = L.control.layers({
-    "OpenStreetMap Grau": startLayer
+    "OpenStreetMap": startLayer,
+    "Esri Topo Map": L.tileLayer.provider("Esri.WorldTopoMap"),
+    "Esri Satellitenbild": L.tileLayer.provider("Esri.WorldImagery"),
+    "Open Topo Map": L.tileLayer.provider("OpenTopoMap"),
+    "Stamen Watercolor": L.tileLayer.provider("Stamen.Watercolor"),
 }).addTo(map);
 
 for (let etappe of ETAPPEN) {
