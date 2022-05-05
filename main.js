@@ -25,11 +25,15 @@ let coords = [
 //console.log(ETAPPEN[0].lat);
 //console.log(ETAPPEN[0].lng);
 
-let map = L.map('map').setView(coords, zoom);
+let startLayer = L.tileLayer.provider("OpenStreetMap.Mapnik");
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+let map = L.map('map', {
+    center: coords,
+    zoom: zoom,
+    layers: [
+        startLayer
+    ],
+});
 
 
 for (let etappe of ETAPPEN) {
