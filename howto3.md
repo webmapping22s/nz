@@ -13,7 +13,7 @@
         <div id="map"></div>
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/b7ad50c5be5ac98be343043e6ad7d27bff6efc41)
+        [🔗 COMMIT](https://github.com/webmapping/nz/commit/ca53b44586f4d73bc85625a90e2503e45d519f2e)
 
     * **Sidestep: das id-Attribut**
         * ist ein globales Attribut
@@ -34,7 +34,7 @@
         }
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/eadf1a52bf9210f192ac4f10825f48e2fa1f5629)
+        [🔗 COMMIT](https://github.com/webmapping/nz/commit/e3cd44e8189ecb942098ffcb3b579e41af07dfa0)
 
     * **Sidestep: CSS-Selektoren**
         * wir kennen jetzt diese Selektoren:
@@ -74,7 +74,7 @@
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/c0a58195cd3011a4ed2e50c2a8192986d6b6564f)
+        [🔗 COMMIT](https://github.com/webmapping/nz/commit/01863bcb497cc332ef0c662ce6da06907da9a044)
 
 * woraus besteht die Kartenbibliothek Leaflet?
     * aus einem Stylesheet [leaflet.css](https://unpkg.com/leaflet@1.7.1/dist/leaflet.css) für das Layout
@@ -95,7 +95,7 @@
     </script>
     ```
 
-    [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/5b0d51a3e7c675c8331bdd43d1990a854c8a9cc3)
+    [🔗 COMMIT](https://github.com/webmapping/nz/commit/3bebc6754ba4614db58ea239fc1f19a1a3e9bf74)
 
 * und kopieren den Code des Beispiels auf der Startseite von Leafletjs dorthin
 
@@ -113,7 +113,7 @@
         .openPopup();
     ```
 
-    [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/1b9c49ad65b6d1da43c583666650baf74fa8b119)
+    [🔗 COMMIT](https://github.com/webmapping/nz/commit/2670176481e6cefb35e3f3bbe342e17127844ba3)
 
 * **Voilà, die erste Karte ist fertig :-)**
 
@@ -131,7 +131,7 @@
         * wir ändern auch den Zoomfaktor von 13 auf 11
         * und den Popuptitel auf &lt;h3>Tongariro Nationalpark &lt;/h3>
 
-        [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/d1ab41dce12c1cb583a2cc99effa4385508f0d38)
+        [🔗 COMMIT](https://github.com/webmapping/nz/commit/bad0c02ff33a411728a8645625f1e2be08256859)
 
 ### d) Was bedeutet der Javascript-Code den wir gerade geändert haben?
 
@@ -243,7 +243,7 @@
     * dann mit **STRG+Klick** das `main.js erstellen`
     * beide Dateien speichern
 
-        [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/d09027c6d2a3a7c9b4540326b934208ef0b3ea3d)
+        [🔗 COMMIT](https://github.com/webmapping/nz/commit/128138743f4cb7125e16d4d1e6b5a2c0d3a3819c)
 
 * den Skript-Code nach `main.js` verschieben
 
@@ -271,7 +271,7 @@
     * das &lt;script>-Element in index.html entfernen
     * beides speichern
 
-        [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/02a1e4ff48a7dc5d6aadfe94c2abb979654c40dd)
+        [🔗 COMMIT](https://github.com/webmapping/nz/commit/1ed3299bbc6fa925815d0a2dc9a643ffe823a713)
 
 * **Ooops - die Karte ist weg :-(**
     * wir erinnern uns, dass der Browser die Seite von oben nach unten lädt
@@ -299,7 +299,7 @@
 
         * wir müssen also sicherstellen, dass das Skript in `main.js` erst ausgeführt wird, wenn die ganze `index.html` Seite gelanden ist und dabei hilft uns
 
-    * das **defer-Attribut** beim &lt;script>-Element [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/34a080e96fd8f3f74acfce18a870c5e3ab48739f)
+    * das **defer-Attribut** beim &lt;script>-Element [🔗 COMMIT](https://github.com/webmapping/nz/commit/71806d6e1b04781bb531040496cf4da4af948c50)
 
         ```html
         <script defer src="main.js"></script>
@@ -336,4 +336,4 @@
         <link rel="icon" href="images/user.jpg" type="image/jpg" />
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/webmapping.github.io/commit/0bfb826bba0c1dac6aa4e73484ddee980bb76cf3)
+        [🔗 COMMIT](https://github.com/webmapping/nz/commit/fd2dbad02ee6454841f2c7b8503823a9aa648d6e)
