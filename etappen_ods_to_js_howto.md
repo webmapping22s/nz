@@ -2,7 +2,7 @@
 
 * [Convert CSV to JSON](https://www.convertcsv.com/csv-to-json.htm)
 
-* Inhalt von [etappen.ods](https://webmapping.github.io/nz/etappen.ods) nach *Step 1: Select your input* kopieren
+* Inhalt von [etappen.ods](https://webmapping22s.github.io/nz/etappen.ods) nach *Step 1: Select your input* kopieren
 
 * in *Step 5: Generate output* erscheint das Resultat von *CSV to JSON*
 
@@ -11,7 +11,7 @@
    * die *values* der Etappenobjekte kommen aus der jeweiligen Spalte
    * Zahlen bei *nr*, *lat*, *lng* werden automatisch erkannt
 
-* Result in [etappen.js](https://webmapping.github.io/nz/etappen.js) speichern
+* Result in [etappen.js](https://webmapping22s.github.io/nz/etappen.js) speichern
 
 * ganz am Anfang die Variablendeklaration *const ETAPPEN =* ergänzen
 

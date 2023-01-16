@@ -13,7 +13,7 @@
         <div id="map"></div>
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/ca53b44586f4d73bc85625a90e2503e45d519f2e)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/ca53b44586f4d73bc85625a90e2503e45d519f2e)
 
     * **Sidestep: das id-Attribut**
         * ist ein globales Attribut
@@ -34,7 +34,7 @@
         }
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/e3cd44e8189ecb942098ffcb3b579e41af07dfa0)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/e3cd44e8189ecb942098ffcb3b579e41af07dfa0)
 
     * **Sidestep: CSS-Selektoren**
         * wir kennen jetzt diese Selektoren:
@@ -74,7 +74,7 @@
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/01863bcb497cc332ef0c662ce6da06907da9a044)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/01863bcb497cc332ef0c662ce6da06907da9a044)
 
 * woraus besteht die Kartenbibliothek Leaflet?
     * aus einem Stylesheet [leaflet.css](https://unpkg.com/leaflet@1.7.1/dist/leaflet.css) für das Layout
@@ -95,7 +95,7 @@
     </script>
     ```
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/3bebc6754ba4614db58ea239fc1f19a1a3e9bf74)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/3bebc6754ba4614db58ea239fc1f19a1a3e9bf74)
 
 * und kopieren den Code des Beispiels auf der Startseite von Leafletjs dorthin
 
@@ -113,7 +113,7 @@
         .openPopup();
     ```
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/2670176481e6cefb35e3f3bbe342e17127844ba3)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/2670176481e6cefb35e3f3bbe342e17127844ba3)
 
 * **Voilà, die erste Karte ist fertig :-)**
 
@@ -131,7 +131,7 @@
         * wir ändern auch den Zoomfaktor von 13 auf 11
         * und den Popuptitel auf &lt;h3>Tongariro Nationalpark &lt;/h3>
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/bad0c02ff33a411728a8645625f1e2be08256859)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/bad0c02ff33a411728a8645625f1e2be08256859)
 
 ### d) Was bedeutet der Javascript-Code den wir gerade geändert haben?
 
@@ -243,7 +243,7 @@
     * dann mit **STRG+Klick** das `main.js erstellen`
     * beide Dateien speichern
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/128138743f4cb7125e16d4d1e6b5a2c0d3a3819c)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/128138743f4cb7125e16d4d1e6b5a2c0d3a3819c)
 
 * den Skript-Code nach `main.js` verschieben
 
@@ -271,7 +271,7 @@
     * das &lt;script>-Element in index.html entfernen
     * beides speichern
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/1ed3299bbc6fa925815d0a2dc9a643ffe823a713)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/1ed3299bbc6fa925815d0a2dc9a643ffe823a713)
 
 * **Ooops - die Karte ist weg :-(**
     * wir erinnern uns, dass der Browser die Seite von oben nach unten lädt
@@ -299,7 +299,7 @@
 
         * wir müssen also sicherstellen, dass das Skript in `main.js` erst ausgeführt wird, wenn die ganze `index.html` Seite gelanden ist und dabei hilft uns
 
-    * das **defer-Attribut** beim &lt;script>-Element [🔗 COMMIT](https://github.com/webmapping/nz/commit/71806d6e1b04781bb531040496cf4da4af948c50)
+    * das **defer-Attribut** beim &lt;script>-Element [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/71806d6e1b04781bb531040496cf4da4af948c50)
 
         ```html
         <script defer src="main.js"></script>
@@ -336,4 +336,4 @@
         <link rel="icon" href="images/user.jpg" type="image/jpg" />
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/fd2dbad02ee6454841f2c7b8503823a9aa648d6e)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/fd2dbad02ee6454841f2c7b8503823a9aa648d6e)

@@ -25,7 +25,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
         * weitere Stile / Deklarationen werden durch **Semikolon getrennt** (z.B. color:green;font-size:40px;)
 
-    * wir verlängern das style-Attribut [🔗 COMMIT](https://github.com/webmapping/nz/commit/648354439c2ae7d9f766b5c9bc4373cc6ad03dc0)
+    * wir verlängern das style-Attribut [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/648354439c2ae7d9f766b5c9bc4373cc6ad03dc0)
 
         ```html
         <h1 style="color:green;font-size:40px;border:3px dashed black;background-color:blue;width:50%">Neuseelandreise</h1>
@@ -57,7 +57,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         * **h1** ist der "CSS-Selektor" (**selector**)
         * die geschwungenen Klammern umschließen die "CSS-Deklarationen" (**declarations**)
 
-    * und dorthin verschieben wir den Inhalt unseres style-Attributs und löschen das style-Attribut [🔗 COMMIT](https://github.com/webmapping/nz/commit/334be0569acb32f8765e5924031e566fe3b80bc1)
+    * und dorthin verschieben wir den Inhalt unseres style-Attributs und löschen das style-Attribut [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/334be0569acb32f8765e5924031e566fe3b80bc1)
 
         ```html
         <style>
@@ -113,9 +113,9 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     <link rel="stylesheet" href="main.css"> 
     ```
 
-* mit **STRG+Klick** erzeugt VS Code `main.css` für uns [🔗 COMMIT](https://github.com/webmapping/nz/commit/c43f3a255750c792462ac98096be137468f2de8a)
+* mit **STRG+Klick** erzeugt VS Code `main.css` für uns [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/c43f3a255750c792462ac98096be137468f2de8a)
 
-* wir verschieben den Inhalt von &lt;style> dort hin, löschen das &lt;style>-Element und verwenden Beautify in `main.css` [🔗 COMMIT](https://github.com/webmapping/nz/commit/fce6b2bcf4cc2b04b5176a994c04930d224dce45)
+* wir verschieben den Inhalt von &lt;style> dort hin, löschen das &lt;style>-Element und verwenden Beautify in `main.css` [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/fce6b2bcf4cc2b04b5176a994c04930d224dce45)
 
     ```css
     h1 {
@@ -129,11 +129,11 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
 * in `main.css` werden wir ab jetzt das Seitenlayout der Etappe definieren
 
-* wir löschen alle Einträge in `main.css` und beginnen von vorne [🔗 COMMIT](https://github.com/webmapping/nz/commit/2856360fcab49aa498feb3d44b658a670df183f5)
+* wir löschen alle Einträge in `main.css` und beginnen von vorne [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/2856360fcab49aa498feb3d44b658a670df183f5)
 
 ### c) Layout der Etappe
 
-* Seitenhintergrund auf Hellgrau setzen [🔗 COMMIT](https://github.com/webmapping/nz/commit/6072c7ee025d9c889214f5e79c45d7343c8978d5)
+* Seitenhintergrund auf Hellgrau setzen [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/6072c7ee025d9c889214f5e79c45d7343c8978d5)
 
     ```css
     body {
@@ -141,7 +141,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-* &lt;main>-Bereich auf Weiß setzen [🔗 COMMIT](https://github.com/webmapping/nz/commit/329c07aa4e18a7061454a0eee324fafa28000f6c)
+* &lt;main>-Bereich auf Weiß setzen [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/329c07aa4e18a7061454a0eee324fafa28000f6c)
 
     ```css
     main {
@@ -149,7 +149,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-* maximale Seitenbreite auf 1024 Pixel setzen [🔗 COMMIT](https://github.com/webmapping/nz/commit/a29efaea7a01527975084f56c29648fa2469d02e)
+* maximale Seitenbreite auf 1024 Pixel setzen [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/a29efaea7a01527975084f56c29648fa2469d02e)
   
     ```css
     main {
@@ -158,7 +158,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-* Seite zentrieren [🔗 COMMIT](https://github.com/webmapping/nz/commit/974ff5003fa9e6743e1710913daf58d750c4073c)
+* Seite zentrieren [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/974ff5003fa9e6743e1710913daf58d750c4073c)
 
     ```css
     main {
@@ -167,7 +167,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-* der Artikelinhalt klebt am Rand - Abstände einführen [🔗 COMMIT](https://github.com/webmapping/nz/commit/9d3c322577767e27df511003798f76f92e33ca36)
+* der Artikelinhalt klebt am Rand - Abstände einführen [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/9d3c322577767e27df511003798f76f92e33ca36)
 
     ```css
     article {
@@ -177,7 +177,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
     * `em` bestimmt die Abstände in Abhängigkeit der Schriftgröße - siehe [Wikipedia:em (Schriftsatz)](https://de.wikipedia.org/wiki/Em_(Schriftsatz))
 
-* Absätze im Artikel als Blocksatz [🔗 COMMIT](https://github.com/webmapping/nz/commit/22d0db4361cab6ae50f6c1f426de7f2cd02ae6cc)
+* Absätze im Artikel als Blocksatz [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/22d0db4361cab6ae50f6c1f426de7f2cd02ae6cc)
 
     ```css
     article p {
@@ -189,7 +189,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
     * **Wichtig**: das heißt dann: *alle p-Element innerhalb des article-Elements*
 
-* Zeilenhöhe gleich noch etwas vergrößern [🔗 COMMIT](https://github.com/webmapping/nz/commit/b68b5a65dc121a1396ed85f4835a04fb814eb673)
+* Zeilenhöhe gleich noch etwas vergrößern [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/b68b5a65dc121a1396ed85f4835a04fb814eb673)
 
     ```css
     article p {
@@ -198,7 +198,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
     }
     ```
 
-* die Links im Artikel färben wir schwarz [🔗 COMMIT](https://github.com/webmapping/nz/commit/a4ff468978909336c2dff43427904e9c437abb4a)
+* die Links im Artikel färben wir schwarz [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/a4ff468978909336c2dff43427904e9c437abb4a)
 
     ```css
     a {
@@ -214,7 +214,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
     * **:hover** kann man auch für andere Element verwenden
 
-* das Userbild im Header zentrieren wir über einen Trick: wir setzen den ganzen Headerbereich auf zentriert [🔗 COMMIT](https://github.com/webmapping/nz/commit/656e6f060d291af913dafc17cb0cd742233b99e5)
+* das Userbild im Header zentrieren wir über einen Trick: wir setzen den ganzen Headerbereich auf zentriert [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/656e6f060d291af913dafc17cb0cd742233b99e5)
 
     ```css
     header {
@@ -244,9 +244,9 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         }
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/6adfe4179691c907d40ef3932f59cc75c165a2a3)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/6adfe4179691c907d40ef3932f59cc75c165a2a3)
 
-* wir schieben das Bild um die halbe Bildbreite nach Oben in das Banner hinein [🔗 COMMIT](https://github.com/webmapping/nz/commit/121107ae60a93c22782767b476e609421baa1599)
+* wir schieben das Bild um die halbe Bildbreite nach Oben in das Banner hinein [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/121107ae60a93c22782767b476e609421baa1599)
 
     ```css
     img.user {
@@ -257,7 +257,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
 
 * der Footer kann auch noch besser aussehen
 
-    * wir grenzen ihn Oben mit einer Linie ab [🔗 COMMIT](https://github.com/webmapping/nz/commit/eed51e6307023be3757c2845f71496ed852b29ec)
+    * wir grenzen ihn Oben mit einer Linie ab [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/eed51e6307023be3757c2845f71496ed852b29ec)
 
         ```css
         footer {
@@ -265,7 +265,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         }
         ```
 
-    * und ändern die Abstände [🔗 COMMIT](https://github.com/webmapping/nz/commit/832a65a3d8dff4309c369ae2282a4bc5a0e83ef1)
+    * und ändern die Abstände [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/832a65a3d8dff4309c369ae2282a4bc5a0e83ef1)
 
     ```css
     footer {
@@ -300,7 +300,7 @@ Wie können wir die Seite stylen? Es gibt mehrere Möglichkeiten
         * das Verteilen erledigt `float` für uns
         * im Gegensatz zum Userbild `img.user`, sind die Klassen `.back` und `.next` durch ein Leerzeichen vom `footer`-Selektor getrennt, was soviel heißt wie: *alle Elemente mit der Klasse  .back oder .next im &lt;footer>-Bereich*
 
-    * [🔗 COMMIT](https://github.com/webmapping/nz/commit/d8bee9acab3fb526bc0f3d0b5441ee1d6bf8239f)
+    * [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/d8bee9acab3fb526bc0f3d0b5441ee1d6bf8239f)
 
 ### d) Layout "responsive" machen
 
@@ -326,7 +326,7 @@ Unsere Seite sieht schon gut aus, aber wie sieht sie am Handy aus? Der Browser h
     }
     ```
 
-    * [🔗 COMMIT](https://github.com/webmapping/nz/commit/f463785e000a2b79b5c28db88a49958bb861e36a)
+    * [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/f463785e000a2b79b5c28db88a49958bb861e36a)
 
 * die Attraktion können wir ohne Klasse ansprechen, da sie in das &lt;article>-Element und &lt;figure>-Element eingebettet ist
 
@@ -338,7 +338,7 @@ Unsere Seite sieht schon gut aus, aber wie sieht sie am Handy aus? Der Browser h
 
     * `article figure img` sucht damit *alle &lt;img>-Elemente eines &lt;article>-Elements, die in einem &lt;figure>-Element vorkommen*
 
-    * [🔗 COMMIT](https://github.com/webmapping/nz/commit/357db41b27b66d34e8df4330edfc92882a086bb5)
+    * [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/357db41b27b66d34e8df4330edfc92882a086bb5)
 
 * drei kleine Verbesserungen machen wir noch
 
@@ -350,7 +350,7 @@ Unsere Seite sieht schon gut aus, aber wie sieht sie am Handy aus? Der Browser h
         }
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/98515d4c92503897bf8d1e2ead67d64f47b47bc3)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/98515d4c92503897bf8d1e2ead67d64f47b47bc3)
 
     * und ein Format für einen Schatten definieren
 
@@ -362,7 +362,7 @@ Unsere Seite sieht schon gut aus, aber wie sieht sie am Handy aus? Der Browser h
         }
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/98515d4c92503897bf8d1e2ead67d64f47b47bc3)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/98515d4c92503897bf8d1e2ead67d64f47b47bc3)
 
         * Woher kommt die komplizierte Syntax des Schattens?
 
@@ -380,9 +380,9 @@ Unsere Seite sieht schon gut aus, aber wie sieht sie am Handy aus? Der Browser h
                 <img class="user shadow" src="images/user.jpg" alt="Another one rides the bus"></a>
             ```
 
-            * [🔗 COMMIT](https://github.com/webmapping/nz/commit/c227aba4e0303ba1c28cad577fe861cc2f1e4eb0)
+            * [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/c227aba4e0303ba1c28cad577fe861cc2f1e4eb0)
 
-    * schließlich ändern wir den Anzeige-Font der Seite [🔗 COMMIT](https://github.com/webmapping/nz/commit/2b6e5f2c8f424314aa61977afea1eb14944cfc83)
+    * schließlich ändern wir den Anzeige-Font der Seite [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/2b6e5f2c8f424314aa61977afea1eb14944cfc83)
 
         ```css
         body {
@@ -429,7 +429,7 @@ Font Awesome ([https://fontawesome.com/](https://fontawesome.com/)) ist eine Ico
         nächste Etappe <i class="fa-solid fa-circle-arrow-right"></i><
         ```
 
-    * [🔗 COMMIT](https://github.com/webmapping/nz/commit/455a6911a63e2092e6cf17e3a92cc6ab7130ea82)
+    * [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/455a6911a63e2092e6cf17e3a92cc6ab7130ea82)
 
 ### f) Webfonts mit Google Fonts
 
@@ -466,7 +466,7 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
         }
         ```
 
-    * [🔗 COMMIT](https://github.com/webmapping/nz/commit/73bbe2da3e6be3d96a72cefc67b5c8742b4e3cbd)
+    * [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/73bbe2da3e6be3d96a72cefc67b5c8742b4e3cbd)
 
     * für die Überschriften wählen wir dann noch **Montserat** (*Light 300*) und ersetzen die @import-Anweisung mit
 
@@ -482,4 +482,4 @@ Google Fonts ist ein interaktives Verzeichnis von über 1000 Schriftarten, die w
         }
         ```
 
-    * [🔗 COMMIT](https://github.com/webmapping/nz/commit/9cdc81b5ac01d30fb29bab269f94b98f11a3426b)
+    * [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/9cdc81b5ac01d30fb29bab269f94b98f11a3426b)

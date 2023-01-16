@@ -4,7 +4,7 @@
 
 ### a) Marker für alle Etappen mit Popups
 
-* alle Etappen finden wir in <https://webmapping.github.io/nz/etappen.js>
+* alle Etappen finden wir in <https://webmapping22s.github.io/nz/etappen.js>
     * die Javascriptdatei beginnt mit der Variablendeklaration `const ETAPPEN =`
     * besteht aus einem `Array` (**eckige Klammern**) mit den einzelnen Etappenobjekten
     * jede Etappe dieses `Arrays` ist ein `Objekt` (**geschwungene Klammern**) mit **key-value-Paaren**
@@ -30,7 +30,7 @@
     <script src="etappen.js"></script>
     ```
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/84a80aad19110ce8261caebdbc8bb7c4ebff092d)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/84a80aad19110ce8261caebdbc8bb7c4ebff092d)
 
 * die Marker werden in einer **for ... of** Schleife erzeugt
     * **for ... of** Schleifen sind eine Möglichkeit, `Arrays` abzuarbeiten
@@ -42,7 +42,7 @@
         }
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/cad12f275e8f931318cbc2219b505757241eadfb)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/cad12f275e8f931318cbc2219b505757241eadfb)
 
         * bei jedem Schleifendurchlauf ist das Etappenobjekt in der Varaiblen `etappe` verfügbar
         * der Zugriff auf die `values` des Etappenobjekts erfolgt über seine `keys`
@@ -70,15 +70,15 @@
         L.marker([etappe.lat, etappe.lng]).addTo(map).bindPopup(popup);
         ```
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/76fb7864ec2a1603c94a923e4ab6553c5abbbc6b)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/76fb7864ec2a1603c94a923e4ab6553c5abbbc6b)
 
 ### b) Marker für die DOC Hütten mit Popups
 
 * Quelle für die *Department of conservation* Hütten ist <https://catalogue.data.govt.nz/dataset/doc-huts1>
 
-* das Python-Skript [huts_js_create.py](https://github.com/webmapping/webmapping.github.io/tree/main/nz/huts_js_create.py) konvertiert die originalen GeoJSON-Daten nach Javascript
+* das Python-Skript [huts_js_create.py](https://github.com/webmapping22s/nz/blob/main/huts_js_create.py) konvertiert die originalen GeoJSON-Daten nach Javascript
 
-* so sieht der Datensatz in <https://webmapping.github.io/nz/huts.js> aus
+* so sieht der Datensatz in <https://webmapping22s.github.io/nz/huts.js> aus
 
     ```js
     const HUTS = [{
@@ -103,7 +103,7 @@
     <script src="huts.js"></script>
     ```
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/0d4452b93a1430302b52af38f729fd792a869273)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/0d4452b93a1430302b52af38f729fd792a869273)
 
 * eine **for  of** Schleife zeichnet die Marker
 
@@ -114,7 +114,7 @@
     }
     ```
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/ac25cc652179d18d9076c27beff2f2e059052c90)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/ac25cc652179d18d9076c27beff2f2e059052c90)
 
 * zur besseren Unterscheidung werden Kreise (`L.circleMarker`) statt Markern ( `L.marker`) verwendet
 
@@ -122,7 +122,7 @@
     L.circleMarker([hut.lat, hut.lng]).addTo(map);
     ```
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/934f043c8f25c9db4c699c0f79f1668c1850ad9b)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/934f043c8f25c9db4c699c0f79f1668c1850ad9b)
 
 * die Popups werden wieder in der **for  of** Schleife definiert und an die Kreise angehängt
 
@@ -139,8 +139,8 @@
     L.circleMarker([hut.lat, hut.lng]).addTo(map).bindPopup(popup);
     ```
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/8a65405b3efe3e628128b7a5cd24078002ef3753)
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/00ced24cb66d7d63d70c2359d3730aeee2269a07)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/8a65405b3efe3e628128b7a5cd24078002ef3753)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/00ced24cb66d7d63d70c2359d3730aeee2269a07)
 
 ### c) Etappen-Navigation hinzufügen
 
@@ -157,7 +157,7 @@
     </div>
     ```
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/7800f2cc90fb868e81ab0893b66c9f063ea212b3)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/7800f2cc90fb868e81ab0893b66c9f063ea212b3)
 
 * dann wird der &lt;nav>-Bereich in der **for of** Schleife mit Hyperlinks zur jeweiligen Etappe gefüllt
 
@@ -184,7 +184,7 @@
 
     * wir verwenden natürlich **+=** bei **.innerHTML**, um die Links anzuhängen
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/25aa1b6daa3310a2e28b491bd52ab68913d76c06)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/25aa1b6daa3310a2e28b491bd52ab68913d76c06)
 
 * die Einträge der Etappennavigation stylen
 
@@ -205,8 +205,8 @@
     * die meisten CSS-Eigenschaften sind selbsterklärend
     * `display: inline-block` bewirkt, dass die einzelnen Kästchen ohne Zeilenumbruch in einer Zeile angezeigt werden
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/211b0e920f0fa01d21e3939e0062070b8f0df869)
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/91af750d778bde436b57aae3b502584ce27d4112)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/211b0e920f0fa01d21e3939e0062070b8f0df869)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/91af750d778bde436b57aae3b502584ce27d4112)
 
     * anwenden können wir diesen Stil in `main.js` bei der Definition des Links über `class="etappenLink"`
 
@@ -214,7 +214,7 @@
         let link = `<a href="https://${etappe.github}.github.io/nz/" class="etappenLink">${etappe.nr}</a>`;
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/25aa1b6daa3310a2e28b491bd52ab68913d76c06)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/25aa1b6daa3310a2e28b491bd52ab68913d76c06)
 
 * einen Tooltip mit dem Etappentitel hinzufügen
 
@@ -257,7 +257,7 @@
     let lng = 175.65;
     ```
 
-[🔗 COMMIT](https://github.com/webmapping/nz/commit/0f6f387c55a476f6869de57c366914d3f2e28713)
+[🔗 COMMIT](https://github.com/webmapping22s/nz/commit/0f6f387c55a476f6869de57c366914d3f2e28713)
 
 ### b) auf die eigene Etappe blicken
 
@@ -278,7 +278,7 @@
         ];
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/2b3d2628be34dae6a9b9283e0e86b375870ef938)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/2b3d2628be34dae6a9b9283e0e86b375870ef938)
 
         * `13` ist der *Index* für das eigene Etappenobjekt im Etappen-Array - also die Etappennummer minus 1
         * mit Werten von 0 bis 18 können wir auch auf andere Etappen blicken ...
@@ -307,7 +307,7 @@
         }
         ```
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/6c2d3e577fd2ebc512ea11b6aa4a060d9776ae1e)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/6c2d3e577fd2ebc512ea11b6aa4a060d9776ae1e)
 
     * **Sidestep: if-Abfrage**
 
@@ -363,7 +363,7 @@
 
         * das eigene Kästchen ist jetzt hellgrau mit weißer Schrift, ohne Unterstreichung und nicht klickbar
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/410e2180f398b1d02b47ed30ee47a469cb8d74be)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/410e2180f398b1d02b47ed30ee47a469cb8d74be)
 
     * bei der Gelegenheit setzen wir die Kästchen beim Format `.etappenLink` noch etwas von einander ab
 
@@ -374,7 +374,7 @@
         }
         ```
 
-        [🔗 COMMIT](https://github.com/webmapping/nz/commit/1b6e6352dc26accd06f9d56a22c5979c48a433ed)
+        [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/1b6e6352dc26accd06f9d56a22c5979c48a433ed)
 
 ### d) offene von geschlossenen Hütten unterscheiden
 
@@ -404,7 +404,7 @@
     }).addTo(map).bindPopup(popup);
     ```
 
-    [🔗 COMMIT](https://github.com/webmapping/nz/commit/21dc6a493f714cdcf9c7937d781a8a3d42ae7690)
+    [🔗 COMMIT](https://github.com/webmapping22s/nz/commit/21dc6a493f714cdcf9c7937d781a8a3d42ae7690)
 
 * woher weiß man das, mit dem Optionen-Objekt?
 
